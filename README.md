@@ -1,22 +1,24 @@
 # 🚀 TaskMaster Microservices Platform
 
-[![GitHub](https://img.shields.io/badge/GitHub-TaskMaster-181717?style=for-the-badge&logo=github)](https://github.com/FayyazAK/TASK_MASTER)
 [![License](https://img.shields.io/badge/license-ISC-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-v18%2B-brightgreen.svg)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-5.x-lightgrey.svg)](https://expressjs.com/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-orange.svg)](https://www.mysql.com/)
 [![Redis](https://img.shields.io/badge/Redis-6.x-red.svg)](https://redis.io/)
 
+[![GitHub](https://img.shields.io/badge/GitHub-TaskMaster-181717?style=for-the-badge&logo=github)](https://github.com/FayyazAK/TASK_MASTER)
+
 TaskMaster is a production-ready, scalable microservices platform for robust task management. Built with a focus on independent service deployment, fault tolerance, and maintainability, this architecture enables autonomous team development and seamless scaling.
 
 <p align="center">
-  <img src="docs/architecture.png" alt="TaskMaster Microservices Architecture" width="700"/>
+  <img src="docs/architecture.svg" alt="TaskMaster Microservices Architecture" width="700"/>
 </p>
 
 ## ⭐ What Makes TaskMaster Different
 
 TaskMaster's microservices architecture offers significant advantages over traditional monolithic
-application
+application.
+
 [![GitHub](https://img.shields.io/badge/GitHub-TaskMaster-181717?style=for-the-badge&logo=github)](https://github.com/FayyazAK/TASK_MASTER)
 
 - **Independent Deployment** - Update services without affecting the entire system
@@ -34,7 +36,7 @@ TaskMaster follows a modern microservices architecture pattern with the followin
 
 | Service           | Repository                                        | Port | Responsibilities & Key Features                                                   |
 | ----------------- | ------------------------------------------------- | ---- | --------------------------------------------------------------------------------- |
-| 🔐 Authentication |                                                   | 4001 | User signup/login, JWT generation, role-based access control, password management |
+| 🔐 Authentication | https://github.com/FayyazAK/taskmaster-ms-auth    | 4001 | User signup/login, JWT generation, role-based access control, password management |
 | 🌐 API Gateway    | https://github.com/FayyazAK/taskmaster-ms-gateway | 8000 | Request routing, rate limiting, CORS, security middleware, service discovery      |
 | 📝 Todo Service   | https://github.com/FayyazAK/taskmaster-ms-todo    | 4002 | CRUD for lists & tasks, priority management                                       |
 | 📧 Email Service  | https://github.com/FayyazAK/taskmaster-ms-email   | 4009 | Email sending, Email Scheduling, Email queue processing (Bull),                   |
@@ -123,6 +125,21 @@ TaskMaster follows a modern microservices architecture pattern with the followin
 - MySQL 8.0 or higher
 - Redis 6.x or higher
 - Git
+
+### Database Setup
+
+MySQL Database setup for each microservice. (See their repos for more info)
+
+#### Redis Setup
+
+1. Install Redis 6.x or higher from the [official website](https://redis.io/download)
+2. Start the Redis server
+3. Configure Redis settings in your `.env` files:
+   ```
+   REDIS_HOST=localhost
+   REDIS_PORT=6379
+   REDIS_PASSWORD=your_redis_password
+   ```
 
 ### Local Development Setup
 
