@@ -1,0 +1,12 @@
+[submodule "taskmaster-ms-gateway"]
+	path = taskmaster-ms-gateway
+	url = https://github.com/FayyazAK/taskmaster-ms-gateway.git
+[submodule "taskmaster-ms-auth"]
+	path = taskmaster-ms-auth
+	url = https://github.com/FayyazAK/taskmaster-ms-auth.git
+[submodule "taskmaster-ms-todo"]
+	path = taskmaster-ms-todo
+	url = https://github.com/FayyazAK/taskmaster-ms-todo.git
+[submodule "taskmaster-ms-email"]
+	path = taskmaster-ms-email
+	url = https://github.com/FayyazAK/taskmaster-ms-email.git
