@@ -8,6 +8,10 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-TaskMaster-181717?style=for-the-badge&logo=github)](https://github.com/FayyazAK/TASK_MASTER)
 
+<p align="center">
+  <img src="docs/taskmaster-logo.png" alt="TaskMaster Logo" width="200"/>
+</p>
+
 TaskMaster is a production-ready, scalable microservices platform for robust task management. Built with a focus on independent service deployment, fault tolerance, and maintainability, this architecture enables autonomous team development and seamless scaling.
 
 <p align="center">
@@ -34,12 +38,12 @@ application.
 
 TaskMaster follows a modern microservices architecture pattern with the following key components:
 
-| Service           | Repository                                        | Port | Responsibilities & Key Features                                                   |
-| ----------------- | ------------------------------------------------- | ---- | --------------------------------------------------------------------------------- |
-| 🔐 Authentication | https://github.com/FayyazAK/taskmaster-ms-auth    | 4001 | User signup/login, JWT generation, role-based access control, password management |
-| 🌐 API Gateway    | https://github.com/FayyazAK/taskmaster-ms-gateway | 8000 | Request routing, rate limiting, CORS, security middleware, service discovery      |
-| 📝 Todo Service   | https://github.com/FayyazAK/taskmaster-ms-todo    | 4002 | CRUD for lists & tasks, priority management                                       |
-| 📧 Email Service  | https://github.com/FayyazAK/taskmaster-ms-email   | 4009 | Email sending, Email Scheduling, Email queue processing (Bull),                   |
+| Service           | Repository                                                                                                                                                         | Port | Responsibilities & Key Features                                               |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | ----------------------------------------------------------------------------- |
+| 🌐 API Gateway    | [![GitHub](https://img.shields.io/badge/GitHub-taskmaster_Gateway-181717?style=for-the-badge&logo=github)](https://github.com/FayyazAK/taskmaster-ms-gateway)      | 8000 | Request routing, rate limiting, CORS, security middleware, service discovery  |
+| 🔐 Authentication | [![GitHub](https://img.shields.io/badge/GitHub-taskmaster_AUTh_service-181717?style=for-the-badge&logo=github)](https://github.com/FayyazAK/taskmaster-ms-auth)    | 4001 | User signup/login, JWT generation, role-based access control, User management |
+| 📝 Todo Service   | [![GitHub](https://img.shields.io/badge/GitHub-taskmaster_TODO_service-181717?style=for-the-badge&logo=github)](https://github.com/FayyazAK/taskmaster-ms-todo)    | 4002 | CRUD for lists & tasks, priority management                                   |
+| 📧 Email Service  | [![GitHub](https://img.shields.io/badge/GitHub-taskmaster_Email_service-181717?style=for-the-badge&logo=github)](]https://github.com/FayyazAK/taskmaster-ms-email) | 4009 | Email sending, Email Scheduling, Email queue processing (Bull),               |
 
 ### Communication Patterns
 
